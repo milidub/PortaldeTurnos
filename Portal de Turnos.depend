@@ -1,0 +1,105 @@
+# depslib dependency file v1.0
+1719355497 source:c:\users\franc\onedrive\escritorio\portal de turnos\main.cpp
+	<iostream>
+	<cstring>
+	<stdlib.h>
+	<ctime>
+	"rlutil.h"
+	"CargarCadena.h"
+	"clsFecha.h"
+	"interfaz.h"
+	"clsPaciente.h"
+	"clsArchivoPaciente.h"
+	"menuPaciente.h"
+	"clsProfesional.h"
+	"clsArchivoProfesional.h"
+	"menuProfesional.h"
+	"clsTurno.h"
+	"clsArchivoTurno.h"
+	"menuTurno.h"
+	"clsLogin.h"
+	"Configuracion.h"
+
+1718213051 c:\users\franc\onedrive\escritorio\portal de turnos\cargarcadena.h
+
+1718985681 c:\users\franc\onedrive\escritorio\portal de turnos\clsfecha.h
+
+1719344116 c:\users\franc\onedrive\escritorio\portal de turnos\clspaciente.h
+
+1719186809 c:\users\franc\onedrive\escritorio\portal de turnos\clsprofesional.h
+
+1719356643 c:\users\franc\onedrive\escritorio\portal de turnos\clslogin.h
+
+1718213050 c:\users\franc\onedrive\escritorio\portal de turnos\clsarchivopaciente.h
+
+1718213050 c:\users\franc\onedrive\escritorio\portal de turnos\clsarchivoprofesional.h
+
+1718213051 c:\users\franc\onedrive\escritorio\portal de turnos\clsturno.h
+
+1719355172 c:\users\franc\onedrive\escritorio\portal de turnos\menupaciente.h
+
+1719355213 c:\users\franc\onedrive\escritorio\portal de turnos\menuprofesional.h
+
+1719355213 c:\users\franc\onedrive\escritorio\portal de turnos\menuturno.h
+
+1718213050 c:\users\franc\onedrive\escritorio\portal de turnos\clsarchivoturno.h
+
+1718201617 source:c:\users\pc-01\desktop\adjuntos\main.cpp
+	<iostream>
+	<cstring>
+	<ctime>
+	"CargarCadena.h"
+	"clsFecha.h"
+	"clsPaciente.h"
+	"clsArchivoPaciente.h"
+	"menuPaciente.h"
+	"clsProfesional.h"
+	"clsArchivoProfesional.h"
+	"menuProfesional.h"
+	"clsTurno.h"
+	"clsArchivoTurno.h"
+	"menuTurno.h"
+	"clsLogin.h"
+
+1718190609 c:\users\pc-01\desktop\adjuntos\cargarcadena.h
+
+1718203156 c:\users\pc-01\desktop\adjuntos\clsfecha.h
+
+1718191810 c:\users\pc-01\desktop\adjuntos\clspaciente.h
+
+1718190610 c:\users\pc-01\desktop\adjuntos\clsarchivopaciente.h
+
+1718202966 c:\users\pc-01\desktop\adjuntos\menupaciente.h
+
+1718190610 c:\users\pc-01\desktop\adjuntos\clsprofesional.h
+
+1718190610 c:\users\pc-01\desktop\adjuntos\clsarchivoprofesional.h
+
+1718202966 c:\users\pc-01\desktop\adjuntos\menuprofesional.h
+
+1718196844 c:\users\pc-01\desktop\adjuntos\clsturno.h
+
+1718198334 c:\users\pc-01\desktop\adjuntos\menuturno.h
+
+1718201418 c:\users\pc-01\desktop\adjuntos\clslogin.h
+
+1718190610 c:\users\pc-01\desktop\adjuntos\clsarchivoturno.h
+
+1719357207 c:\users\franc\onedrive\escritorio\portal de turnos\configuracion.h
+
+1719152113 c:\users\franc\onedrive\escritorio\portal de turnos\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1719355461 c:\users\franc\onedrive\escritorio\portal de turnos\interfaz.h
+

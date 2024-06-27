@@ -35,7 +35,7 @@ using namespace std;
 
 ///CLASES SECUNDARIAS:
 ///FECHA
-///LOGIN (nombre y contraseÃ±a)
+///LOGIN (nombre y contraseña)
 
 ///CAMPOS DE LAS CLASES PRINCIPALES:
 ///PACIENTE:

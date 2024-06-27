@@ -1,34 +1,34 @@
-#ifndef CLSARCHIVOPACIENTE_H_INCLUDED
-#define CLSARCHIVOPACIENTE_H_INCLUDED
+#ifndef CLSARCHIVOPROFESIONAL_H_INCLUDED
+#define CLSARCHIVOPROFESIONAL_H_INCLUDED
 
-class ArchivoPaciente{
+class ArchivoProfesional{
     private:
         char nombre[30];
     public:
-        ArchivoPaciente(const char *n="pacientes.dat"){strcpy(nombre,n);}
+        ArchivoProfesional(const char *n="profesionales.dat"){strcpy(nombre,n);}
         void limpiarArchivo();
-        void grabarRegistro(Paciente obj);
-        void modificarRegistro(Paciente obj, int pos);
-        Paciente leerRegistro(int pos);
+        void grabarRegistro(Profesional obj);
+        void modificarRegistro(Profesional obj, int pos);
+        Profesional leerRegistro(int pos);
         void listarArchivo();
         int contarRegistros();
         int buscarRegistro(int num);
 };
 
-void ArchivoPaciente::limpiarArchivo(){
+void ArchivoProfesional::limpiarArchivo(){
     FILE *p=fopen(nombre, "wb");
     if(p==NULL){return;}
     fclose(p);
 }
 
-void ArchivoPaciente::grabarRegistro(Paciente obj){
+void ArchivoProfesional::grabarRegistro(Profesional obj){
     FILE *p=fopen(nombre, "ab");
     if(p==NULL){return;}
     fwrite(&obj, sizeof obj, 1, p);
     fclose(p);
 }
 
-void ArchivoPaciente::modificarRegistro(Paciente obj, int pos){
+void ArchivoProfesional::modificarRegistro(Profesional obj, int pos){
     FILE *p=fopen(nombre, "rb+");
     if(p==NULL){return;}
     fseek(p, pos * sizeof obj, 0);
@@ -36,12 +36,12 @@ void ArchivoPaciente::modificarRegistro(Paciente obj, int pos){
     fclose(p);
 }
 
-Paciente ArchivoPaciente::leerRegistro(int pos){
-    Paciente obj;
-    obj.setDNI(-1);
+Profesional ArchivoProfesional::leerRegistro(int pos){
+    Profesional obj;
+    obj.setMatricula(-1);
     FILE *p=fopen(nombre, "rb");
     if(p==NULL){
-        obj.setDNI(-2);
+        obj.setMatricula(-2);
         return obj;
     }
     fseek(p, pos * sizeof obj, 0);
@@ -50,18 +50,18 @@ Paciente ArchivoPaciente::leerRegistro(int pos){
     return obj;
 }
 
-int ArchivoPaciente::contarRegistros(){
+int ArchivoProfesional::contarRegistros(){
     FILE *p=fopen(nombre, "rb");
     if(p==NULL){return -1;}
     fseek(p, 0, 2);
     int cantBytes=ftell(p);
     fclose(p);
-    return cantBytes/sizeof (Paciente);
+    return cantBytes/sizeof (Profesional);
 }
 
-void ArchivoPaciente::listarArchivo(){
+void ArchivoProfesional::listarArchivo(){
     int cant=contarRegistros();
-    Paciente obj;
+    Profesional obj;
     for(int i=0; i<cant; i++){
         obj=leerRegistro(i);
         obj.Mostrar();
@@ -69,16 +69,16 @@ void ArchivoPaciente::listarArchivo(){
     }
 }
 
-int ArchivoPaciente::buscarRegistro(int num){
+int ArchivoProfesional::buscarRegistro(int num){
     int cant=contarRegistros();
-    Paciente obj;
+    Profesional obj;
     for(int i=0; i<cant; i++){
         obj=leerRegistro(i);
-        if(num==obj.getDni()){
+        if(num==obj.getMatricula()){
             return i;
         }
     }
     return -1;
 }
 
-#endif // CLSARCHIVOPACIENTE_H_INCLUDED
+#endif // CLSARCHIVOPROFESIONAL_H_INCLUDED
